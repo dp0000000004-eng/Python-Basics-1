@@ -11,11 +11,13 @@ def addEvenNumbers(limit):
     for item in range(limit):
       if item%2 == 0:   # % (modulo) returns the remainder after item divided by 2
         sum = sum + item
+      else:
+          return "Enter a Even Number !!"
 
     print("Sum is",sum)
 
 
 if __name__ == '__main__':
-    userGivenInput = int(input("Enter the nth term: "))
+    userGivenInput = int(input("Enter the nth("the term at position n") term: "))
     addEvenNumbers(userGivenInput)
 
